@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Println("Enter a numbe: ")
+  fmt.Print("Enter a number: ")
   var input float64
   fmt.Scanf("%f", &input)
 
-  ouput := input * 2
+  output := input * 2
 
   fmt.Println(output)
 }
