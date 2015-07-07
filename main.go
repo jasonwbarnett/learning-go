@@ -30,4 +30,21 @@ func main() {
 	num, e = strconv.ParseInt("12", 0, 0)
 	fmt.Println(num)
 	fmt.Println(e)
+
+	myloop()
+}
+
+func myloop() {
+	testing := false
+	control := 0
+
+	fmt.Println("Entering loop.")
+	for !testing {
+		if control >= 10 {
+			testing = true
+		}
+		fmt.Println(control)
+		control++
+	}
+	fmt.Println("Exiting loop.")
 }
