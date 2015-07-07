@@ -35,16 +35,14 @@ func main() {
 }
 
 func myloop() {
-	testing := false
-	control := 0
+	variance := 0
 
 	fmt.Println("Entering loop.")
-	for !testing {
-		if control >= 10 {
-			testing = true
+	for control := false; !control; variance++ {
+		if variance >= 10 {
+			control = true
 		}
-		fmt.Println(control)
-		control++
+		fmt.Println(variance)
 	}
 	fmt.Println("Exiting loop.")
 }
